@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <link rel="stylesheet" href="tables.css" />
+  </head>
+
+  <body>
+    <a href="#bill">Die Rechnung bitte!</a>
+
+    <table id="table1">
+      <tr>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+      </tr>
+      <tr>
+        <td>X</td>
+        <td colspan="2" style="background-color: cornflowerblue">
+          colspan="2"
+        </td>
+        <td>X</td>
+        <td>X</td>
+      </tr>
+      <tr>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td rowspan="2" style="background-color: cornflowerblue">
+          rowspan="2"
+        </td>
+        <td>X</td>
+      </tr>
+      <tr>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+      </tr>
+      <tr>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+      </tr>
+    </table>
+
+    <div style="height: 1000px"></div>
+
+    <hr />
+
+    <table id="bill">
+      <thead>
+        <tr>
+          <th>Beschreibung</th>
+          <th>Menge</th>
+          <th>Preis</th>
+          <th>Gesamtpreis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Eis</td>
+          <td>6</td>
+          <td>1.00</td>
+          <td>6.00</td>
+        </tr>
+        <tr>
+          <td>Waffel</td>
+          <td>3</td>
+          <td>0.50</td>
+          <td>1.50</td>
+        </tr>
+        <tr>
+          <td>Streusel</td>
+          <td>1</td>
+          <td>0.50</td>
+          <td>0.50</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Gesamt</td>
+          <td></td>
+          <td></td>
+          <td>8.00</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div style="height: 1000px"></div>
+  </body>
+</html>

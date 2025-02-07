@@ -1,0 +1,24 @@
+table#table1 {
+  border-collapse: collapse;
+
+  width: 100%;
+}
+#table1 td {
+  border: 2px solid black;
+  border-bottom: 5px dashed pink;
+  border-right: 5px dotted blue;
+  
+  text-align: center;
+}
+
+
+#bill {
+  border-collapse: collapse
+}
+#bill thead {
+  border-bottom: 2px solid black
+}
+#bill tfoot {
+  border-top: 2px solid black;
+  border-bottom: 5px double black
+}

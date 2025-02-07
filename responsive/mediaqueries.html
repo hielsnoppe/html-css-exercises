@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+
+      nav ul li {
+        display: block;
+      }
+
+      @media (min-width: 500px) {
+        nav ul {
+          flex-direction: row;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: slateblue;
+        }
+        a {
+          color: wheat;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Start</a></li>
+        <li><a href="#">Text</a></li>
+        <li><a href="#">Mitte</a></li>
+        <li><a href="#">Text</a></li>
+        <li><a href="#">Ende</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

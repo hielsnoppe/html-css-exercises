@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms - Inputs</title>
+  </head>
+  <body>
+    <form action="https://google.com/search" method="GET">
+      <input type="text" name="q" />
+      <input type="hidden" name="lr" value="lang_es" />
+      <input type="submit" value="Google" />
+    </form>
+
+    <hr />
+
+    <form
+      action="https://formsubmit.co/6aa2ca04-2878-4889-80ab-e58b645583fa@byom.de"
+      method="post"
+    >
+      <input type="text" name="test" />
+      <input type="submit" value="E-Mail" />
+    </form>
+
+    <hr />
+
+    <form
+      action="https://formsubmit.co/6aa2ca04-2878-4889-80ab-e58b645583fa@byom.de"
+      method="post"
+    >
+      <fieldset>
+        <legend>Profil</legend>
+
+        <div>
+          <label for="text-input">text</label>
+          <input id="text-input" type="text" name="text" maxlength="10" />
+        </div>
+        <div>
+          <label for="number-input">number</label>
+          <input
+            type="number"
+            name="number"
+            id="number-input"
+            min="1"
+            max="10"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Login</legend>
+
+        <div>
+          <label for="email-input">email</label>
+          <input id="email-input" type="email" name="email" />
+        </div>
+
+        <div>
+          <label for="password-input">password</label>
+          <input type="password" name="password" id="password-input" />
+        </div>
+      </fieldset>
+
+      <div>
+        <input
+          type="checkbox"
+          name="checkbox"
+          id="checkbox-1"
+          value="option1"
+        />
+        <label for="checkbox-1">Option 1</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          name="checkbox"
+          id="checkbox-2"
+          value="option2"
+        />
+        <label for="checkbox-2">Option 2</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          name="checkbox"
+          id="checkbox-3"
+          value="option3"
+        />
+        <label for="checkbox-3">Option 3</label>
+      </div>
+
+      <div>
+        <input type="radio" name="radio" id="radio-1" value="option1" />
+        <label for="radio-1">Option 1</label>
+      </div>
+      <div>
+        <input type="radio" name="radio" id="radio-2" value="option2" />
+        <label for="radio-2">Option 2</label>
+      </div>
+      <div>
+        <input type="radio" name="radio" id="radio-3" value="option3" />
+        <label for="radio-3">Option 3</label>
+      </div>
+
+      <input type="submit" value="E-Mail" />
+    </form>
+  </body>
+</html>

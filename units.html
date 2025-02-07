@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Units</title>
+    <style>
+      li {
+        display: block;
+        background-color: blue;
+      }
+      #units td.px:before,
+      li.px {
+        width: 16px;
+      }
+      #units td.pt:before,
+      li.pt {
+        width: 16pt;
+      }
+      #units td.pc:before,
+      li.pc {
+        width: 1pc;
+      }
+      #units td.in:before,
+      li.in {
+        width: 1in;
+      }
+      #units td.cm:before,
+      li.cm {
+        width: 1cm;
+      }
+      #units td.mm:before,
+      li.mm {
+        width: 10mm;
+      }
+      #units td.em:before,
+      li.em {
+        width: 1em;
+      }
+      #units td.rem:before,
+      li.rem {
+        width: 1rem;
+      }
+      #units td.pct:before,
+      li.pct {
+        width: 5%;
+      }
+      #units td.vw:before,
+      li.vw {
+        width: 10vw;
+      }
+      #units td.vh:before,
+      li.vh {
+        width: 10vh;
+      }
+      #units td.vmin:before,
+      li.vmin {
+        width: 10vmin;
+      }
+      #units td.vmax:before,
+      li.vmax {
+        width: 10vmax;
+      }
+      #units td.ch:before,
+      li.ch {
+        width: 1ch;
+      }
+      #units td.ex:before,
+      li.ex {
+        width: 1ex;
+      }
+
+      #units td::before {
+        content: "\00a0";
+        display: block;
+        background-color: blue;
+      }
+
+      #units td.em::before,
+      #units td.rem::before,
+      #units td.ch::before,
+      #units td.ex::before {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="pct">5%</li>
+      <li class="vw">10vw</li>
+      <li class="vh">10vh</li>
+      <li class="vmin">10vmin</li>
+      <li class="vmax">10vmax</li>
+    </ul>
+    <table id="units">
+      <thead>
+        <tr>
+          <th></th>
+          <th colspan="6">absolute</th>
+          <th colspan="4">relative</th>
+        </tr>
+        <tr>
+          <th>font-size</th>
+          <th>px</th>
+          <th>pt</th>
+          <th>pc</th>
+          <th>in</th>
+          <th>cm</th>
+          <th>mm</th>
+          <th>em</th>
+          <th>rem</th>
+          <th>ch</th>
+          <th>ex</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="font-size: x-small">
+          <th>x-small</th>
+          <td class="px"></td>
+          <td class="pt"></td>
+          <td class="pc"></td>
+          <td class="in"></td>
+          <td class="cm"></td>
+          <td class="mm"></td>
+          <td class="em"></td>
+          <td class="rem"></td>
+          <td class="ch"></td>
+          <td class="ex"></td>
+        </tr>
+        <tr style="font-size: medium">
+          <th>medium</th>
+          <td class="px"></td>
+          <td class="pt"></td>
+          <td class="pc"></td>
+          <td class="in"></td>
+          <td class="cm"></td>
+          <td class="mm"></td>
+          <td class="em"></td>
+          <td class="rem"></td>
+          <td class="ch"></td>
+          <td class="ex"></td>
+        </tr>
+        <tr style="font-size: x-large">
+          <th>x-large</th>
+          <td class="px"></td>
+          <td class="pt"></td>
+          <td class="pc"></td>
+          <td class="in"></td>
+          <td class="cm"></td>
+          <td class="mm"></td>
+          <td class="em"></td>
+          <td class="rem"></td>
+          <td class="ch"></td>
+          <td class="ex"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

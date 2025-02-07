@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #one {
+        background-color: aquamarine;
+
+        width: 300px;
+        /* box-sizing: content-box; */
+        box-sizing: border-box;
+
+        border: 5px solid green;
+        padding: 5px;
+      }
+      #two {
+        background-color: pink;
+
+        width: 300px;
+        box-sizing: border-box;
+
+        padding: 10px;
+        border: 5px solid salmon;
+      }
+      #three {
+        background-color: cornflowerblue;
+        width: 300px;
+      }
+      #container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      #nav li {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <nav id="nav">
+        <ul>
+          <li><a href="#">Start</a></li>
+          <li><a href="#">Produkte</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div id="one">
+        <p class="odd">
+          Lorem ipsum dolor sit amet.
+          <em>Lorem ipsum dolor sit amet.</em>
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+      <div id="two">
+        <p class="even">
+          Lorem ipsum dolor sit amet.
+          <em>Lorem ipsum dolor sit amet.</em>
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+      <div id="three">
+        <p class="odd">
+          Lorem ipsum dolor sit amet.
+          <em>Lorem ipsum dolor sit amet.</em>
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
